@@ -149,7 +149,9 @@ export default async function Page() {
       <main className="relative z-10 p-4 md:p-8 max-w-[90vw] xl:max-w-[1500px] mx-auto">
         <header className="text-center mb-12 pt-12 md:pt-8 relative">
           <img src="/flag-orpheus-top.svg" alt="" className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-[42%] w-24 md:w-32" />
-          <div className="text-5xl mb-4">⚓</div>
+          <div className="flex justify-center mb-4">
+            <Image src="/logo_nobg_dark.png" alt="Shipso Certifico" width={160} height={160} className="w-40 h-40 md:w-48 md:h-48" />
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-3 text-white">The Shipwrights Crew</h1>
           <p className="text-zinc-500">{crew.length} people certifying your ships</p>
         </header>
