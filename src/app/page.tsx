@@ -34,7 +34,7 @@ async function load() {
   const users = await db.user.findMany({
     where: { 
       isActive: true,
-      role: { not: 'observer' }
+      role: { in: ['trainee', 'shipwright', 'megawright'] }
     },
     select: { slackId: true, username: true, avatar: true, role: true },
     orderBy: { username: "asc" },
